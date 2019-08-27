@@ -1,16 +1,20 @@
 console.log("JavaScript loaded!")
 
-let startTime, currentTime, interval;
+let inputValue, startTime, currentTime, interval;
 
 const startClock = () => {
     console.log("Button has been clicked.")
-    let inputValue = document.getElementById("timer-input").value;
+    inputValue = document.getElementById("timer-input").value;
     if (inputValue == "--:--:--" || inputValue == "") {
+        console.log("inputValue = "+inputValue)
         document.getElementById("message").innerHTML = "Please input a start time!";
     }
     else {
         startTime = inputValue;
         timeArray = inputValue.split(":");
+        if (timeArray.length == 2) {
+            timeArray.push(0)
+        }
         currentTime = parseInt(timeArray[0])*3600 + parseInt(timeArray[1])*60 + parseInt(timeArray[2]);
         if (isNaN(currentTime)) { 
             currentTime = 0
