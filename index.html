@@ -11,11 +11,18 @@
 <body>
     <h1>Duncan&rsquo;s Countdown Timer</h1>
     <p>Input the time to count down from!</p>
-    <input type="time" id="timer-input" step="1" min="00:00:00" max="23:59:59" value="00:00:30"/>
+    <input type="time" id="timer-input" step="1" min="00:00:00" max="23:59:59" value="00:00:30"/><br />
+    <p><label for="music-box">Play sound on finish.</label>
+    <input type="checkbox" id="music-box" /></p>
     <button type="submit" id="submit">Start timer!</button>
     <button type="submit" id="reset">Reset timer!</button>
     <p id="message"></p>
     <p id="clock"></p>
+    <footer>
+        <li>Made by Duncan Ritchie</li>
+        <li><a href="https://www.github.com/DuncanRitchie2/jsCountdownTimer" title="Code on GitHub">See the code</a></li>
+        <li><a href="https://www.duncanritchie.co.uk" title="My website">My website</a></li>
+    </footer>
     <script src="./main.js"></script>
 </body>
 </html>

@@ -16,3 +16,16 @@ body {
 #reset {
     display: none;
 }
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer li {
+    list-style-type: none;
+}

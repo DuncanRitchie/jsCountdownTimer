@@ -32,7 +32,17 @@ const startClock = () => {
 const changeClock = () => {
     document.getElementById("clock").textContent = currentTime;
     if (currentTime == 0) {
-        clearInterval(interval);document.getElementById("message").innerHTML = "You have finished counting down from <span id='display-time'>"+startTime+"</span>."
+        clearInterval(interval);document.getElementById("message").innerHTML = "You have finished counting down from <span id='display-time'>"+startTime+"</span>.";
+        
+        let musicBox = document.getElementById("music-box").checked;
+        if (musicBox) {
+            new Audio(`https://www.duncanritchie.co.uk/jsChallenges/keycode-drumkit/sounds/clap.wav`).play();
+        setTimeout(()=>{
+            new Audio(`https://www.duncanritchie.co.uk/jsChallenges/keycode-drumkit/sounds/openhat.wav`).play();}
+            ,200);
+        }
+        
+            
     } else {
         currentTime--;
     }
