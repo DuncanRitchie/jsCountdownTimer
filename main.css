@@ -1,3 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+body {
+    font-family: 'Alegreya', serif;
+    text-align: center;
+}
+
 #display-time {
     font-weight: bold;
+}
+
+#clock {
+    font-size: 72px;
+}
+
+#reset {
+    display: none;
 }
