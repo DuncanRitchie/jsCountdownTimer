@@ -13,6 +13,7 @@ const startClock = () => {
         startTime = inputValue;
         timeArray = inputValue.split(":");
         if (timeArray.length == 2) {
+            console.log("timeArray = "+timeArray)
             timeArray.push(0)
         }
         currentTime = parseInt(timeArray[0])*3600 + parseInt(timeArray[1])*60 + parseInt(timeArray[2]);
