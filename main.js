@@ -30,7 +30,8 @@ const startClock = () => {
 }
 
 const changeClock = () => {
-    document.getElementById("clock").textContent = currentTime;
+    let clock = document.getElementById("clock")
+    clock.textContent = currentTime;
     if (currentTime == 0) {
         clearInterval(interval);document.getElementById("message").innerHTML = "You have finished counting down from <span id='display-time'>"+startTime+"</span>.";
         
@@ -45,6 +46,10 @@ const changeClock = () => {
             
     } else {
         currentTime--;
+        clock.style.backgroundSize = "120%";
+        setTimeout(()=>{
+            clock.style.backgroundSize = "100%";
+        },250)
     }
 }
 
