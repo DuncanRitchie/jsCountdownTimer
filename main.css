@@ -55,11 +55,13 @@ button {
 }
 
 #clock {
-    font-size: 15vw;
+    font-size: 72px;
     background-image: radial-gradient(pink, pink, hotpink);
     transition: background-size 0.5s ease;
     background-position: center;
-    margin: 0 10vw;
+    width: 50vw;
+    max-width: 500px;
+    margin: 0 auto;
     border-radius: 10vw;
 }
 

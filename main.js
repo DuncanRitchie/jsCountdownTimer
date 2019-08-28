@@ -47,6 +47,11 @@ const changeClock = () => {
     } else {
         currentTime--;
         clock.style.backgroundSize = "120%";
+
+        if (document.getElementById("tick-box").checked) {
+            new Audio(`https://www.duncanritchie.co.uk/jsChallenges/keycode-drumkit/sounds/tink.wav`).play();
+        }
+
         setTimeout(()=>{
             clock.style.backgroundSize = "100%";
         },250)
