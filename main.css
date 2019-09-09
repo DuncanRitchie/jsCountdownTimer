@@ -10,7 +10,7 @@ body {
     text-align: center;
     min-height: 100%;
     width: 100%;
-    background-image: linear-gradient(to top, hotpink, salmon);
+    background-image: linear-gradient(to top, rgb(255, 44, 150), rgb(255, 135, 88));
     background-attachment: fixed;
     padding: 0;
     margin: 0;
@@ -67,7 +67,7 @@ button {
 
 #clock {
     font-size: 72px;
-    background-image: radial-gradient(pink, pink, hotpink);
+    background-image: radial-gradient(pink, pink, rgb(255, 44, 150));
     transition: background-size 0.5s ease;
     background-position: center;
     width: 66vw;
@@ -91,7 +91,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom, hotpink, salmon);
+    background-image: linear-gradient(to bottom, rgb(255, 44, 150), rgb(255, 135, 88));
 }
 
 footer li {
@@ -100,6 +100,10 @@ footer li {
 
 a:link {
     color: darkblue;
+}
+
+a:hover {
+    color: blue;
 }
 
 a:focus {
