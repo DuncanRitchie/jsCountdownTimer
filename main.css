@@ -28,6 +28,13 @@ body {
     justify-content: center;
 }
 
+h1 {
+    background-image: linear-gradient(rgba(253, 158, 147, 0.1), rgb(255, 44, 150), rgba(255, 135, 88, 0.1));
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin: 18px 0 4px;
+}
+
 #timer-input {
     width: 80%;
     max-width: 500px;
