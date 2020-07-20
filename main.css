@@ -89,16 +89,19 @@ button {
     display: none;
 }
 
-footer {
+footer, ul {
     position: fixed;
     bottom: 0;
     width: calc(100% - 24px);
     margin: 0 auto;
     padding: 12px;
+    background-image: linear-gradient(to bottom, rgb(255, 44, 150), rgb(255, 135, 88));
+}
+
+footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-image: linear-gradient(to bottom, rgb(255, 44, 150), rgb(255, 135, 88));
 }
 
 footer li {
